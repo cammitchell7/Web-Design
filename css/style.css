@@ -27,18 +27,27 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1em;
+  margin-bottom: .25em;
+}
+h2 {
+  width: 480px;
+  font-size: 1.6em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
   margin-bottom: 1em;
 }
 
 .grid-container {
-  border: 3px dashed purple;
+  margin: 2em 4em;
   padding: 1em;
   display: grid;
   grid-gap: 1em;
+
   grid-template-areas:
-                      "pic1 par1"
-                      "par2 pic2"
-                      "pic3 par3"
+                      "pic1 par1 par1"
+                      "par2 par2 pic2"
+                      "pic3 par3 par3"
 }
 .one {
   grid-area: par1;
@@ -51,14 +60,16 @@ h1 {
 }
 .pic-one {
   grid-area: pic1;
+  background-color: black;
 }
 .pic-two {
   grid-area: pic2;
+  background-color: black;
 }
 .pic-three {
   grid-area: pic3;
+  background-color: black;
 }
 .grid-item {
   padding: .5em;
-  background-color: lightgrey;
 }
