@@ -4,6 +4,12 @@ body {
   color: #333;
   background-color: #C5C6C7;
 }
+footer {
+  color: #D0D0D0;
+  background-color: #0B0C10;
+  padding: .75em;
+  text-align: center;
+}
 nav ul {
   font-size: 18px;
   font-weight: bold;
