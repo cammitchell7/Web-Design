@@ -29,10 +29,34 @@ h1 {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
 .grid-container {
+  border: 3px dashed purple;
   padding: 1em;
   display: grid;
   grid-gap: 1em;
+  grid-template-areas:
+                      "pic1 par1"
+                      "par2 pic2"
+                      "pic3 par3"
+}
+.one {
+  grid-area: par1;
+}
+.two {
+  grid-area: par2;
+}
+.three {
+  grid-area: par3;
+}
+.pic-one {
+  grid-area: pic1;
+}
+.pic-two {
+  grid-area: pic2;
+}
+.pic-three {
+  grid-area: pic3;
 }
 .grid-item {
   padding: .5em;
