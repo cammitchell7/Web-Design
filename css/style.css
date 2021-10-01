@@ -19,11 +19,11 @@ nav ul {
   justify-content: space-around;
   background-color: #0B0C10;
 }
-nav a:link, a:visited {
+nav .nav-link:link, .nav-link:visited {
   color: #D0D0D0;
   text-decoration: none;
 }
-nav a:hover, a:active {
+nav .nav-link:hover, .nav-link:active {
   color: #F0F0F0;
   text-decoration: underline;
 }
