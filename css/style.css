@@ -1,0 +1,64 @@
+h1 {
+  border-bottom: dashed black 3px;
+}
+h1, h2 {
+  text-align: center;
+  padding: 6px;
+}
+h2 {
+  font-size: 20px;
+}
+
+/*Nav Bar 1*/
+.dropdown {
+  /* Border */
+  border-radius: 5px;
+  border: 2px solid rgb(0, 0, 0);
+
+  display: flex;
+  justify-content: center;
+
+  /* Reset list styles */
+  list-style-type: none;
+  margin: 1em;
+  padding: 0;
+  background-color: lightgrey;
+}
+.dropdown li {
+  background-color: lightgrey;
+  /* Spacing */
+  padding: 10px;
+  /* Used to position the sub dropdown */
+  position: relative;
+}
+.dropdown ul {
+  /* Border */
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  /* Hidden by default */
+  display: none;
+
+  /* Absolute position */
+  left: 0;
+  position: absolute;
+  top: 100%;
+
+  /* Reset styles */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* Width */
+  width: 200px;
+}
+.dropdown ul ul {
+  left: 100%;
+  position: absolute;
+  top: 0;
+}
+.dropdown li:hover {
+  background-color: rgb(217, 179, 255);
+}
+.dropdown li:hover > ul {
+  display: block;
+}
+
+/*Nav Bar 2*/
