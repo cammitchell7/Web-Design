@@ -92,15 +92,54 @@ h2 {
   color: white;
 }
 
-
-/*Text styles*/
-h3 {
-  font-size: 24px;
-}
 .container {
   width: 100%;
   padding: 10px;
 }
+/*Button Styles*/
+.label {
+  margin-left: 50px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: #394a56;
+}
+.label-text {
+  margin-left: 16px;
+}
+.toggle {
+  isolation: isolate;
+  position: relative;
+  height: 30px;
+  width: 60px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow:
+    -8px -4px 8px 0px #ffffff,
+    8px 4px 12px 0px #d1d9e6,
+    4px 4px 4px 0px #d1d9e6 inset,
+    -4px -4px 4px 0px #ffffff inset;
+}
+.toggle-state {
+  display: none;
+}
+.indicator {
+  height: 100%;
+  width: 200%;
+  background: #ecf0f3;
+  border-radius: 15px;
+  transform: translate3d(-75%, 0, 0);
+  transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+  box-shadow:
+    -8px -4px 8px 0px #ffffff,
+    8px 4px 12px 0px #d1d9e6;
+}
+.toggle-state:checked ~ .indicator {
+  transform: translate3d(25%, 0, 0);
+}
+
+
+/*Text styles*/
 .textItem {
   width: 24%;
   padding: 10px;
@@ -179,7 +218,6 @@ h4 span:nth-child(11){ animation-delay:.5s; }
 h4 span:nth-child(12){ animation-delay:.55s; }
 h4 span:nth-child(13){ animation-delay:.6s; }
 h4 span:nth-child(14){ animation-delay:.65s; }
-
 .gradientText
 {
     font-family: 'Pacifico', sans-serif;
