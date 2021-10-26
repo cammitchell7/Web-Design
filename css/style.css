@@ -172,13 +172,53 @@ h2 {
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
 }
-
 .slide:hover {
   box-shadow: inset 400px 50px 0 0 #D80286;
 }
-
-
-
+.btn-1 a {
+  text-decoration: none;
+  border: 2px solid #010100;
+  padding: 15px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+.spanClass {
+  font-size: 24px;
+  font-family: verdana, sans-serif;
+  position: relative;
+  z-index: 3;
+}
+.btn-1 a::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  width: calc(100% + 6px);
+  height: calc(100% - 10px);
+  background-color: #ffffff;
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+.btn-1 a:hover::before {
+  transform: scaleY(0);
+}
+.btn-1 a::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+  background-color: #ffffff;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+.btn-1 a:hover::after {
+  transform: scaleX(0);
+}
 
 /*Text styles*/
 .textItem {
