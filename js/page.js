@@ -1,6 +1,6 @@
-var playerScore = 0;
-var compScore = 0;
-var ties = 0;
+sessionStorage.setItem("playerScore", 0);
+sessionStorage.setItem("compScore", 0);
+sessionStorage.setItem("ties", 0);
 
 function compChoice() {
   var rnd = Math.random();
@@ -23,43 +23,43 @@ function choice(player) {
   var comp = compChoice();
   if(player === comp){
     document.getElementById('result').innerHTML = "It's a Tie!";
-    ties += 1;
-    document.getElementById('tscore').innerHTML = ties;
+    sessionStorage.setItem("ties", parseInt(sessionStorage.getItem("ties")) + 1);
+    document.getElementById('tscore').innerHTML = sessionStorage.getItem("ties");
   }
   else if(player === 0){
     if(comp === 1){
       document.getElementById('result').innerHTML = "Paper Wins!";
-      compScore += 1;
-      document.getElementById('oscore').innerHTML = compScore;
+      sessionStorage.setItem("compScore", parseInt(sessionStorage.getItem("compScore")) + 1);
+      document.getElementById('oscore').innerHTML = sessionStorage.getItem("compScore");
     }
     else {
       document.getElementById('result').innerHTML = "Rock Wins!";
-      playerScore += 1;
-      document.getElementById('pscore').innerHTML = playerScore;
+      sessionStorage.setItem("playerScore", parseInt(sessionStorage.getItem("playerScore")) + 1);
+      document.getElementById('pscore').innerHTML = sessionStorage.getItem("playerScore");
     }
   }
   else if(player === 1){
     if(comp === 0){
       document.getElementById('result').innerHTML = "Paper Wins!";
-      playerScore += 1;
-      document.getElementById('pscore').innerHTML = playerScore;
+      sessionStorage.setItem("playerScore", parseInt(sessionStorage.getItem("playerScore")) + 1);
+      document.getElementById('pscore').innerHTML = sessionStorage.getItem("playerScore");
     }
     else {
       document.getElementById('result').innerHTML = "Scissors Wins!";
-      compScore += 1;
-      document.getElementById('oscore').innerHTML = compScore;
+      sessionStorage.setItem("compScore", parseInt(sessionStorage.getItem("compScore")) + 1);
+      document.getElementById('oscore').innerHTML = sessionStorage.getItem("compScore");
     }
   }
   else if(player === 2){
     if(comp === 0){
       document.getElementById('result').innerHTML = "Rock Wins!";
-      compScore += 1;
-      document.getElementById('oscore').innerHTML = compScore;
+      sessionStorage.setItem("compScore", parseInt(sessionStorage.getItem("compScore")) + 1);
+      document.getElementById('oscore').innerHTML = sessionStorage.getItem("compScore");
     }
     else {
       document.getElementById('result').innerHTML = "Scissors Wins!";
-      playerScore += 1;
-      document.getElementById('pscore').innerHTML = playerScore;
+      sessionStorage.setItem("playerScore", parseInt(sessionStorage.getItem("playerScore")) + 1);
+      document.getElementById('pscore').innerHTML = sessionStorage.getItem("playerScore");
     }
   }
 }
