@@ -40,8 +40,8 @@ main section {
 section.scoreboard {
   border-style: dashed;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
+  grid-template: 1fr 1fr 1fr;
+  grid-gap: 0;
 }
 @media screen and (max-width: 768px)  {
   main {grid-template-columns: 1fr;}
@@ -59,7 +59,7 @@ section.scoreboard {
   justify-content: center;
   align-items: center;
 }
-#pscore, #oscore {
+#pscore, #oscore, #tscore {
   font-size: 2rem;
   font-weight: 800;
   line-height: 1;
