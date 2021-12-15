@@ -1,0 +1,42 @@
+body {
+  font-size: 18px;
+  padding: 1rem;
+  color: #fff;
+  background-color: #222;
+  width: 98%;
+  margin: 0 auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ccc;
+  color: #DDD;
+  padding: 1em;
+  flex-direction: row;
+}
+.main-grid {
+  margin-top: 3.5rem; /*-- adds space above grid wrap --*/
+  display: grid; /*-- sets display mode --*/
+  grid-gap: 1.5rem; /*-- creates gutters --*/
+  grid-template-columns: 1fr; /*-- default mobile layout is 1-column--*/
+}
+@media screen and (min-width: 550px) { /*-- at screens between 550 and 767 --*/
+  body {width: 96%; margin: 0 auto;}
+  .main-grid {grid-template-columns: repeat(2, 1fr);}  /*-- 2 columnns --*/
+}
+@media screen and (min-width: 768px) {/*-- at screens between 768 and 989 --*/
+  body {width: 94%; margin: 0 auto;}
+  .main-grid {grid-template-columns: repeat(3, 1fr);} /*-- 3 columnns --*/
+}
+@media screen and (min-width: 990px) {/*-- at screens between 990 and 1271 --*/
+  body {width: 92%; margin: 0 auto;}
+  .main-grid {grid-template-columns: repeat(4, 1fr);} /*-- 4 columnns --*/
+}
+@media screen and (min-width: 1280px) {/*-- at screens 1280 and above --*/
+  body {width: 90%; margin: 0 auto;}
+  .main-grid {grid-template-columns: repeat(4, 1fr);} /*-- 4 columnns --*/
+}
+
+.modal {
+   display: none;/*-- hidden by default --*/
+ }
