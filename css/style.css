@@ -133,18 +133,18 @@ a.nav-item:hover {
   background-size: cover;
   background-position: center center;
 }
-.one .thumb {background-image: url('https://picsum.photos/300/200/?image=1');}
-.two .thumb {background-image: url('https://picsum.photos/300/200/?image=2');}
-.three .thumb {background-image: url('https://picsum.photos/300/200/?image=3');}
-.four .thumb {background-image: url('https://picsum.photos/300/200/?image=4');}
+.one .thumb {background-image: url('../img/penguins.jpg');}
+.two .thumb {background-image: url('../img/bird_flock.jpg');}
+.three .thumb {background-image: url('../img/monkies.jpg');}
+.four .thumb {background-image: url('../img/fox.jpg');}
 .five .thumb {background-image: url('../img/peacock.jpg');}
-.six .thumb {background-image: url('https://picsum.photos/300/200/?image=6');}
-.seven .thumb {background-image: url('https://picsum.photos/300/200/?image=7');}
-.eight .thumb {background-image: url('https://picsum.photos/300/200/?image=8');}
-.nine .thumb {background-image: url('https://picsum.photos/300/200/?image=9');}
-.ten .thumb {background-image: url('https://picsum.photos/300/200/?image=10');}
-.eleven .thumb {background-image: url('https://picsum.photos/300/200/?image=11');}
-.twelve .thumb {background-image: url('https://picsum.photos/300/200/?image=12');}
+.six .thumb {background-image: url('../img/frog.jpg');}
+.seven .thumb {background-image: url('../img/elephants.jpg');}
+.eight .thumb {background-image: url('../img/ducks.jpg');}
+.nine .thumb {background-image: url('../img/lions.jpg');}
+.ten .thumb {background-image: url('../img/zebras.jpg');}
+.eleven .thumb {background-image: url('../img/meerkats.jpg');}
+.twelve .thumb {background-image: url('../img/cats.jpg');}
 .card-text {
   color: #555;
 }
