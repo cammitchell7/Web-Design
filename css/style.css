@@ -3,7 +3,7 @@ body {
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: #FFF;
-  background-color: #222;
+  background-color: #0E0B16;
   width: 100%;
   margin: 0 auto;
 }
@@ -22,7 +22,7 @@ i.fas { /*-- adds a little padding left and right on fontawesome icons --*/
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
-  background-color: #CCC;
+  background-color: #E7DFDD;
   padding: 1em 4em;
   width: 100%;
 }
@@ -31,7 +31,7 @@ i.fas { /*-- adds a little padding left and right on fontawesome icons --*/
 }
 a.nav-item {
   text-align: center;
-  color: #555;
+  color: #444;
   text-decoration: none;
   transition: color 250ms ease-in-out;
 }
@@ -89,7 +89,6 @@ a.nav-item:hover {
 }
 .indicator {
   cursor: pointer;
-  background-color: #bbb;
   transition: all 250ms ease-in-out;
   opacity: .5;
 }
@@ -127,7 +126,7 @@ a.nav-item:hover {
 .main-grid-item {
   border-radius: 4px;  /*-- rounds borders --*/
   padding: .5em; /*-- adds space inside --*/
-  background-color: #CCC;
+  background-color: #E7DFDD;
 }
 .thumb {
   padding-bottom: 56%;
@@ -138,7 +137,7 @@ a.nav-item:hover {
 .two .thumb {background-image: url('https://picsum.photos/300/200/?image=2');}
 .three .thumb {background-image: url('https://picsum.photos/300/200/?image=3');}
 .four .thumb {background-image: url('https://picsum.photos/300/200/?image=4');}
-.five .thumb {background-image: url('https://picsum.photos/300/200/?image=5');}
+.five .thumb {background-image: url('../img/peacock.jpg');}
 .six .thumb {background-image: url('https://picsum.photos/300/200/?image=6');}
 .seven .thumb {background-image: url('https://picsum.photos/300/200/?image=7');}
 .eight .thumb {background-image: url('https://picsum.photos/300/200/?image=8');}
@@ -157,7 +156,7 @@ a.nav-item:hover {
 }
 
 button.card-more.button {
-  background-color: #CCC;
+  background-color: #E7DFDD;
 }
 .button a {
   text-decoration: none;
@@ -179,7 +178,7 @@ button.card-more.button {
   left: -2px;
   width: calc(100% + 6px);
   height: calc(100% - 10px);
-  background-color: #CCC;
+  background-color: #E7DFDD;
   transition: all 0.5s ease-in-out;
   transform: scaleY(1);
 }
@@ -193,7 +192,7 @@ button.card-more.button {
   top: -5px;
   width: calc(100% - 10px);
   height: calc(100% + 10px);
-  background-color: #CCC;
+  background-color: #E7DFDD;
   transition: all 0.5s ease-in-out;
   transform: scaleX(1);
 }
@@ -203,5 +202,59 @@ button.card-more.button {
 
 /* modal style */
 .modal {
-   display: none;/*-- hidden by default --*/
- }
+   display: none; /*-- hidden by default --*/
+   position: fixed;
+   z-index: 1100; /*-- sets higher than anything else so modal is in the very front --*/
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgba(0, 0, 0, .6);
+}
+.modal-content {
+   background-color: #5458CC;
+   color: #E7DFDD;
+   margin: 1rem auto;
+   padding: 1em;
+   width: 90%;
+   border-radius: 8px;
+   animation: fadein .5s ease-in-out;
+}
+@keyframes fadein {
+  from{transform:scale(.1);} /*-- modal grows from very small to full size--*/
+}
+.close {
+   color: #000;
+   font-size: 2.5em;
+   font-weight: bold;
+   position: absolute;
+   top: 6px;
+   right: 5.5%;
+}
+.close:hover,
+.close:focus {
+   color: #E7DFDD;
+   text-decoration: none;
+   cursor: pointer;
+}
+.modal-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+}
+.eg-text {
+  align-self: center;
+}
+.eg-text h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+.modal-body img {
+  margin-bottom: 1.5em;
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 1280px) { /*-- better modal display on largest screens --*/
+  .modal-body {grid-template-columns: 7fr 5fr;}
+}

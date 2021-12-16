@@ -36,3 +36,15 @@ function showSlides(n) { // main slideshow function with n as the slide number t
   slides[slideIndex-1].style.display = "block"; // display the current slideIndex
   indicator[slideIndex-1].className += " active"; // Activate the current indicator
 }
+
+// Image modal functions - Requires jQuery!!!
+$(".button").on("click", function() { // function for button click
+  var modal = $(this).data("modal");
+  $(modal).show(); // jQuery opening the modal
+});
+$(".modal").on("click", function(e) { // sets up click function
+  var className = e.target.className;
+  if(className === "modal" || className === "close"){ // if close button clicked or clicked off the modal
+    $(this).closest(".modal").hide(); // closes the modal
+  }
+});
