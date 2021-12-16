@@ -11,6 +11,10 @@ main {
   width: 95%;
   margin: 0 auto;
 }
+i.fas { /*-- adds a little padding left and right on fontawesome icons --*/
+  padding: 0 .33em;
+}
+
 /* Navbar style */
 .navbar {
   margin-top: -1rem;
@@ -23,7 +27,7 @@ main {
   padding: 1em 4em;
   width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {  /* For non mobile Nav */
   .navbar {display: flex; flex-direction: row; justify-content: space-between;}
 }
 a.nav-item {
@@ -34,21 +38,26 @@ a.nav-item {
 }
 a.nav-item:hover {
   color: #000;
-  cursor: pointer; /*-- changes menu items to pointer on hover --*/
+  cursor: pointer;
 }
 .nav-item.trigram {
-  display: none; /*-- hides trigram (hamburger menu button) by default --*/
-  text-decoration: none; /*-- removes underline --*/
-  font-size: 2rem; /*-- makes much larger than normal text--*/
+  display: none; /*-- hidden by default --*/
+  text-decoration: none;
+  font-size: 2rem;
 }
 @media screen and (max-width: 767px) {
   .navbar a, .navbar span {display: none;}
-  .navbar a.trigram {display:inherit; position:absolute; right:6%; font-size:2em; margin-top: -.6em;}
+  .navbar a.trigram {display:inherit; position:absolute; right:6%; font-size:2em; margin-top: -.5em;}
   .navbar {padding: 1.75em 4em;}
 }
 
+@media screen and (max-width: 767px) {
+  .navbar.responsive {align-items: center;}
+  .navbar.responsive a, .navbar.responsive span {display:inherit;}
+  .navbar.responsive a:not(:last-child) {padding-bottom: .5em;}
+}
+
 /* Slideshow style */
-/* On smaller screens, hides slideshow */
 .indicator {
   cursor:pointer; /*-- changes hover cursor to the hand --*/
   height: auto; /*-- sets height of pics --*/
