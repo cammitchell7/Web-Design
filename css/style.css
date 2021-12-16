@@ -23,7 +23,6 @@ i.fas { /*-- adds a little padding left and right on fontawesome icons --*/
   justify-content: space-between;
   align-content: center;
   background-color: #CCC;
-  color: #DDD;
   padding: 1em 4em;
   width: 100%;
 }
@@ -126,18 +125,80 @@ a.nav-item:hover {
 }
 
 .main-grid-item {
-  background-color: lightgrey;
-  border: 3px black solid;
-  border-radius: 5px;
-  width: 250px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  border-radius: 4px;  /*-- rounds borders --*/
+  padding: .5em; /*-- adds space inside --*/
+  background-color: #CCC;
 }
-.cards .card-body {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-align: center;
+.thumb {
+  padding-bottom: 56%;
+  background-size: cover;
+  background-position: center center;
+}
+.one .thumb {background-image: url('https://picsum.photos/300/200/?image=1');}
+.two .thumb {background-image: url('https://picsum.photos/300/200/?image=2');}
+.three .thumb {background-image: url('https://picsum.photos/300/200/?image=3');}
+.four .thumb {background-image: url('https://picsum.photos/300/200/?image=4');}
+.five .thumb {background-image: url('https://picsum.photos/300/200/?image=5');}
+.six .thumb {background-image: url('https://picsum.photos/300/200/?image=6');}
+.seven .thumb {background-image: url('https://picsum.photos/300/200/?image=7');}
+.eight .thumb {background-image: url('https://picsum.photos/300/200/?image=8');}
+.nine .thumb {background-image: url('https://picsum.photos/300/200/?image=9');}
+.ten .thumb {background-image: url('https://picsum.photos/300/200/?image=10');}
+.eleven .thumb {background-image: url('https://picsum.photos/300/200/?image=11');}
+.twelve .thumb {background-image: url('https://picsum.photos/300/200/?image=12');}
+.card-text {
+  color: #555;
+}
+.card-title {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: -.25em;
+  margin-top: -.05em;
+}
+
+button.card-more.button {
+  background-color: #CCC;
+}
+.button a {
+  text-decoration: none;
+  border: 2px solid;
+  padding: .2em;
+  color: #555;
+  position: relative;
+  display: inline-block;
+}
+.spanClass {
+  font-size: 18px;
+  position: relative;
+  z-index: 3;
+}
+.button a::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  width: calc(100% + 6px);
+  height: calc(100% - 10px);
+  background-color: #CCC;
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+.button a:hover::before {
+  transform: scaleY(0);
+}
+.button a::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+  background-color: #CCC;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+.button a:hover::after {
+  transform: scaleX(0);
 }
 
 /* modal style */
