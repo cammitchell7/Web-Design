@@ -50,7 +50,6 @@ a.nav-item:hover {
   .navbar a.trigram {display:inherit; position:absolute; right:6%; font-size:2em; margin-top: -.5em;}
   .navbar {padding: 1.75em 4em;}
 }
-
 @media screen and (max-width: 767px) {
   .navbar.responsive {align-items: center;}
   .navbar.responsive a, .navbar.responsive span {display:inherit;}
@@ -58,15 +57,45 @@ a.nav-item:hover {
 }
 
 /* Slideshow style */
+.slideshow {
+  padding: 1em;
+  margin: auto;
+  width: 90%;
+}
+.slideshow-wrapper {
+  position: relative;
+  max-width: 100%;
+}
+.slideshow-wrapper img {
+  width: 100%;
+}
+.numberof {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
+.captiontext {
+  margin-top: 16px;
+}
+.prev {position:absolute; left:0%; top: 45%;}
+.next {position:absolute; right:0%; top: 45%;}
+.prev, .next {
+  cursor:pointer;
+  font-weight: bold;
+  font-size: 40px;
+}
+.slide-picker {
+  display: flex;
+  flex-direction: row;
+}
 .indicator {
-  cursor:pointer; /*-- changes hover cursor to the hand --*/
-  height: auto; /*-- sets height of pics --*/
-  width: 24%; /*-- sets width of pics --*/
-  margin: 0 2px; /*-- adds margin between pics --*/
-  background-color: #bbb; /*-- sets background color to light gray --*/
-  display: inline-block; /*-- displays in a horizontal line --*/
-  transition: all 250ms ease-in-out; /*-- allows opacity change to take time --*/
+  cursor: pointer;
+  background-color: #bbb;
+  transition: all 250ms ease-in-out;
   opacity: .5;
+}
+.active, .indicator:hover {
+  opacity: 1; /*-- makes fully visible when hovered  --*/
 }
 .indicator img {
   width: 100% !important; /*-- small images fill available space --*/
@@ -75,9 +104,10 @@ a.nav-item:hover {
   .slideshow {display: none;}
 }
 
-/* Navbar style */
+/* grid style */
 .main-grid {
   margin-top: 3.5rem; /*-- adds space above grid wrap --*/
+  margin-bottom: 3.5rem;
   display: grid; /*-- sets display mode --*/
   grid-gap: 1.5rem; /*-- creates gutters --*/
   grid-template-columns: 1fr; /*-- default mobile layout is 1-column--*/
@@ -95,6 +125,22 @@ a.nav-item:hover {
   .main-grid {grid-template-columns: repeat(4, 1fr);} /*-- 4 columnns --*/
 }
 
+.main-grid-item {
+  background-color: lightgrey;
+  border: 3px black solid;
+  border-radius: 5px;
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cards .card-body {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+/* modal style */
 .modal {
    display: none;/*-- hidden by default --*/
  }
