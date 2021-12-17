@@ -25,3 +25,9 @@ function checkmail() {
 	  $('.cst-error').text('succes').show().addClass('cst-success').removeClass('cst-danger');
 	 }
 }
+function addCart() {
+  var x = document.getElementById('cartNum').innerHTML;
+  x = parseInt(x) + 1;
+  document.getElementById('cartNum').innerHTML = x;
+  alert("Item added to your cart successfully!");
+}
