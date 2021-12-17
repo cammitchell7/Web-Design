@@ -27,6 +27,11 @@ p {
 h1 {
   font-family: 'Varela Round';
 }
+@media screen and (max-width: 768px) {
+  .about {
+    display: none;
+  }
+}
 .about-us {
   display: flex;
   flex-direction: row;
@@ -41,7 +46,8 @@ h1 {
 }
 .CTA {
   padding-left: 20px;
-  width: 20%;
+  height: 278px;
+  width: 318px;
 }
 
 
@@ -64,9 +70,16 @@ h2 {
 
 
 /* email Subscribe */
-.sub-button-container {
-  padding-left: 5em;
+@media screen and (min-width: 1280px) {
+  .sub-button-container {
+    padding-left: 5em;
     margin: -3em 0 0 0;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .foot-container {
+    display: inline;
+  }
 }
 .sub-button {
   background-color: #bcbcbb;
