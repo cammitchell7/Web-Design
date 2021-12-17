@@ -3,17 +3,45 @@
   --bs-light-rgb: 188, 188, 187;
   --bs-primary-rgb: 248, 248, 247;
 }
-i.fas {
+i.fa-guitar {
   color: #f8f8f7;
 }
 section {
-  border-left: 10px #c82b28 solid;
-  border-right: 10px #c82b28 solid;
+  border-left: 10px #ac73ff solid;
+  border-right: 10px #ac73ff solid;
 }
 .btn-outline-dark {
     color: black;
     border-color: #010101;
     background-color: #bcbcbb;
+}
+.nav-item {
+  font-size: 20px;
+}
+.fa-home {
+  color: #010101;
+}
+p {
+  font-family: 'rubik';
+}
+h1 {
+  font-family: 'Varela Round';
+}
+.about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin: 0 6em 2em;
+}
+.about-text {
+  width: 55%;
+  font-size: 20px;
+  line-height: 52.5px;
+}
+.CTA {
+  padding-left: 20px;
+  width: 20%;
 }
 
 
@@ -21,6 +49,8 @@ section {
 h2 {
   text-align: center;
   margin-bottom: 1.5em;
+  font-size: 36px;
+  font-family: 'Dosis';
 }
 .my-card {
     position:absolute;
@@ -30,4 +60,27 @@ h2 {
 }
 .jumbotron {
   margin: 1em .5em 1em 2em;
+}
+
+
+/* email Subscribe */
+.sub-button-container {
+  padding-left: 5em;
+    margin: -3em 0 0 0;
+}
+.sub-button {
+  background-color: #bcbcbb;
+  border-color: black;
+}
+.sub-button:hover {
+  background-color: #ac73ff;
+  border-color: #010101;
+}
+.cst-error.cst-danger {
+   color: brown;
+   font-size:26px;
+}
+.cst-error.cst-success {
+   color: blue;
+     font-size:26px;
 }
