@@ -1,9 +1,15 @@
 :root {
   --bs-dark-rgb: 68, 25, 94;
-  --bs-light-rgb: 188,188,187;
+  --bs-light-rgb: 188, 188, 187;
+  --bs-primary-rgb: 248, 248, 247;
 }
-
-
+i.fas {
+  color: #f8f8f7;
+}
+section {
+  border-left: 10px #c82b28 solid;
+  border-right: 10px #c82b28 solid;
+}
 .btn-outline-dark {
     color: black;
     border-color: #010101;
