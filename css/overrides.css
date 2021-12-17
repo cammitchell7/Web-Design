@@ -1,0 +1,11 @@
+:root {
+  --bs-dark-rgb: 68, 25, 94;
+  --bs-light-rgb: 188,188,187;
+}
+
+
+.btn-outline-dark {
+    color: black;
+    border-color: #010101;
+    background-color: #bcbcbb;
+}
