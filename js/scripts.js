@@ -22,7 +22,7 @@ function checkmail() {
     return false;
  }
  else{
-	  $('.cst-error').text('succes').show().addClass('cst-success').removeClass('cst-danger');
+	  $('.cst-error').text('success').show().addClass('cst-success').removeClass('cst-danger');
 	 }
 }
 function addCart() {
@@ -32,8 +32,7 @@ function addCart() {
   alert("Item added to your cart successfully!");
 }
 
-
-		$(document).ready(function() {
+$(document).ready(function() {
 		    var slider = $("#slider");
 		    var thumb = $("#thumb");
 		    var slidesPerPage = 4; //globaly define number of elements per page
@@ -113,4 +112,5 @@ function addCart() {
                     $(".qty").val(parseInt(now)+1);
                 }
             });
-		});
+    alert("Your message was sent successfully!");
+});

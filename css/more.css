@@ -57,3 +57,7 @@ button.card-more.button {
 .button a:hover::after {
   transform: scaleX(0);
 }
+
+.jumbotron {
+  background-color: #bcbcbb;
+}
