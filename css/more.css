@@ -2,7 +2,15 @@
   padding-top: 2em;
 }
 
-
+h3 {
+  font-family: 'Varela Round';
+}
+.contact-font {
+  font-family: 'Rubik';
+}
+.first-contact {
+  padding-top: 2em;
+}
 
 button.card-more.button {
   background-color: #ac73ff;
