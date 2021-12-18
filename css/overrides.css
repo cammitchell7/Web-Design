@@ -21,6 +21,13 @@ section {
 .active {
   color: #010101;
 }
+.cart-style {
+  text-decoration: none;
+  color: black;
+}
+.cart-style:hover {
+  color: black;
+}
 p {
   font-family: 'rubik';
 }
