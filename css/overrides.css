@@ -1,0 +1,99 @@
+:root {
+  --bs-dark-rgb: 68, 25, 94;
+  --bs-light-rgb: 188, 188, 187;
+  --bs-primary-rgb: 248, 248, 247;
+}
+i.fa-guitar {
+  color: #f8f8f7;
+}
+section {
+  border-left: 10px #ac73ff solid;
+  border-right: 10px #ac73ff solid;
+}
+.btn-outline-dark {
+    color: black;
+    border-color: #010101;
+    background-color: #bcbcbb;
+}
+.nav-item {
+  font-size: 20px;
+}
+.active {
+  color: #010101;
+}
+p {
+  font-family: 'rubik';
+}
+h1 {
+  font-family: 'Varela Round';
+}
+@media screen and (max-width: 768px) {
+  .about {
+    display: none;
+  }
+}
+.about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin: 0 6em 2em;
+}
+.about-text {
+  width: 55%;
+  font-size: 20px;
+  line-height: 52.5px;
+}
+.CTA {
+  padding-left: 20px;
+  height: 278px;
+  width: 318px;
+}
+
+
+/* Inventory in stock cards */
+h2 {
+  text-align: center;
+  margin-bottom: 1.5em;
+  font-size: 36px;
+  font-family: 'Dosis';
+}
+.my-card {
+    position:absolute;
+    left:42%;
+    top:-20px;
+    border-radius:50%;
+}
+.jumbotron {
+  margin: 1em .5em 1em 2em;
+}
+
+
+/* email Subscribe */
+@media screen and (min-width: 1280px) {
+  .sub-button-container {
+    padding-left: 5em;
+    margin: -3em 0 0 0;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .foot-container {
+    display: inline;
+  }
+}
+.sub-button {
+  background-color: #bcbcbb;
+  border-color: black;
+}
+.sub-button:hover {
+  background-color: #ac73ff;
+  border-color: #010101;
+}
+.cst-error.cst-danger {
+   color: brown;
+   font-size:26px;
+}
+.cst-error.cst-success {
+   color: blue;
+     font-size:26px;
+}
