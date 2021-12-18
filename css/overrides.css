@@ -18,7 +18,7 @@ section {
 .nav-item {
   font-size: 20px;
 }
-.active {
+.fa-home {
   color: #010101;
 }
 p {
@@ -27,7 +27,7 @@ p {
 h1 {
   font-family: 'Varela Round';
 }
-@media screen and (max-width: 768px) { /* Don't desplay "about us" on too small of screens */
+@media screen and (max-width: 768px) {
   .about {
     display: none;
   }
