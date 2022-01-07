@@ -1,0 +1,63 @@
+.first-row {
+  padding-top: 2em;
+}
+
+h3 {
+  font-family: 'Varela Round';
+}
+.contact-font {
+  font-family: 'Rubik';
+}
+.first-contact {
+  padding-top: 2em;
+}
+
+button.card-more.button {
+  background-color: #ac73ff;
+}
+.button a {
+  text-decoration: none;
+  border: 2px solid;
+  padding: .2em;
+  color: #ac73ff;
+  position: relative;
+  display: inline-block;
+}
+.spanClass {
+  font-size: 18px;
+  position: relative;
+  z-index: 3;
+}
+.button a::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  width: calc(100% + 6px);
+  height: calc(100% - 10px);
+  background-color: #ac73ff;
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+.button a:hover::before {
+  transform: scaleY(0);
+  background-color: #ac73ff;
+}
+.button a::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+  background-color: #ac73ff;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+.button a:hover::after {
+  transform: scaleX(0);
+}
+
+.jumbotron {
+  background-color: #bcbcbb;
+}

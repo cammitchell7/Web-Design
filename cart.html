@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Cart - Cam's Guitar Emporium</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/403cbe08da.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik|Dosis|Varela+Round">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/overrides.css" rel="stylesheet" />
+        <link href="css/cart.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#"><i class="fas fa-guitar fa-2x"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="more.html"><i class="fas fa-id-card"></i> Contact</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-store"></i> Shop</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="all_products.html">All Products</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="guitars.html">Guitars</a></li>
+                                <li><a class="dropdown-item" href="other.html">Other Products</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span id="cartNum" class="badge text-black ms-1 bg-primary">0</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <section>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+        	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        	<div class="cart-wrap">
+        		<div class="container">
+        	        <div class="row">
+        			    <div class="col-lg-8">
+        			        <div class="main-heading">Shopping Cart</div>
+        			        <div class="table-cart">
+        	                    <table>
+        	                        <thead>
+        	                            <tr>
+        	                                <th>Product</th>
+        	                                <th>Quantity</th>
+        	                                <th>Total</th>
+        	                                <th></th>
+        	                            </tr>
+        	                        </thead>
+        	                        <tbody>
+        	                            <tr>
+        	                                <td>
+        	                                	<div class="display-flex align-center">
+        		                                    <div class="img-product">
+        		                                        <img src="img/Gibson-Les-Paul.jpg" alt="" class="mCS_img_loaded">
+        		                                    </div>
+        		                                    <div class="name-product">
+                                                    Gibson 60th Anniversary
+        		                                        <br>Les Paul 3
+        		                                    </div>
+        		                                    <div class="price">
+        		                                        $5,999.00
+        		                                    </div>
+        	                                    </div>
+        	                                </td>
+        	                                <td class="product-count">
+        	                                    <form action="#" class="count-inlineflex">
+        										    <div class="qtyminus">-</div>
+        										    <input type="text" name="quantity" value="1" class="qty">
+        										    <div class="qtyplus">+</div>
+        										</form>
+        	                                </td>
+        	                                <td>
+        	                                    <div class="total">
+        	                                        $5,999.00
+        	                                    </div>
+        	                                </td>
+        	                                <td>
+        	                                    <a href="#" title="">
+        	                                        <img src="images/icons/delete.png" alt="" class="mCS_img_loaded">
+        	                                    </a>
+        	                                </td>
+        	                            </tr>
+        	                            <tr>
+        	                                <td>
+        	                                	<div class="display-flex align-center">
+        		                                    <div class="img-product">
+        		                                        <img src="img/Pick-Holders.jpg" alt="" class="mCS_img_loaded">
+        		                                    </div>
+        		                                    <div class="name-product">
+        		                                        Pick Wallets
+        		                                    </div>
+        		                                    <div class="price">
+        		                                        $40.00
+        		                                    </div>
+        	                                    </div>
+        	                                </td>
+        	                                <td class="product-count">
+        	                                    <form action="#" class="count-inlineflex">
+        										    <div class="qtyminus">-</div>
+        										    <input type="text" name="quantity" value="5" class="qty">
+        										    <div class="qtyplus">+</div>
+        										</form>
+        	                                </td>
+        	                                <td>
+        	                                    <div class="total">
+        	                                        $200.00
+        	                                    </div>
+        	                                </td>
+        	                                <td>
+        	                                    <a href="#" title="">
+        	                                        <img src="images/icons/delete.png" alt="" class="mCS_img_loaded">
+        	                                    </a>
+        	                                </td>
+        	                            </tr>
+        	                        </tbody>
+        	                    </table>
+        	                    <div class="coupon-box">
+        	                        <form action="#" method="get" accept-charset="utf-8">
+        	                            <div class="coupon-input">
+        	                                <input type="text" name="coupon code" placeholder="Coupon Code">
+        	                                <button type="submit" class="round-black-btn">Apply Coupon</button>
+        	                            </div>
+        	                        </form>
+        	                    </div>
+        			        </div>
+        			        <!-- /.table-cart -->
+        			    </div>
+        			    <!-- /.col-lg-8 -->
+        			    <div class="col-lg-4">
+        			        <div class="cart-totals">
+        			            <h3>Cart Totals</h3>
+        			            <form action="#" method="get" accept-charset="utf-8">
+        			                <table>
+        			                    <tbody>
+        			                        <tr>
+        			                            <td>Subtotal</td>
+        			                            <td class="subtotal">$6,199.00</td>
+        			                        </tr>
+        			                        <tr>
+        			                            <td>Shipping</td>
+        			                            <td class="free-shipping">Free Shipping</td>
+        			                        </tr>
+        			                        <tr class="total-row">
+        			                            <td>Total</td>
+        			                            <td class="price-total">$6,199.00</td>
+        			                        </tr>
+        			                    </tbody>
+        			                </table>
+        			                <div class="btn-cart-totals">
+        			                    <a href="#" class="update round-black-btn" title="">Update Cart</a>
+        			                    <a href="#" class="checkout round-black-btn" title="">Proceed to Checkout</a>
+        			                </div>
+        			                <!-- /.btn-cart-totals -->
+        			            </form>
+        			            <!-- /form -->
+        			        </div>
+        			        <!-- /.cart-totals -->
+        			    </div>
+        			    <!-- /.col-lg-4 -->
+        			</div>
+        		</div>
+        	</div>
+          </section>
+          <!-- Footer-->
+          <footer class="p-5 bg-dark">
+            <div class="foot-container">
+              <div class="container"><p class="m-1 text-center text-white">Copyright &copy; Cameron A. Mitchell 2021</p></div>
+              <div class="container sub-button-container">
+  	             <div class="col-lg-4">
+                   <input type="text" name="signup" id="signuptop" class="form-control cst-ctrl" placeholder="Enter your email Address">
+                   <input type="submit" class="btn sub-button" name="submit-btn" value="Subscribe"  id="sub1" onclick="checkmail();">
+                   <div class="clearfix"></div>
+                   <span class="cst-error"></span>
+  	             </div>
+              </div>
+              <?php query_posts(array('post_type' = 'ram_jane', 'showposts' =-1 , 'order' = 'DESC', 'meta_key'= 'yes', 'meta_value'	= true )); ?>
+            </div>
+          </footer>
+          <!-- Bootstrap core JS-->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+          <!-- Core theme JS-->
+          <script src="js/scripts.js"></script>
+          <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="	sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </body>
+</html>
