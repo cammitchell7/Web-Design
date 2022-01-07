@@ -1,0 +1,116 @@
+body {
+  font-family: 'Monda', 'Arial', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  background-color: #90AACB;
+}
+footer {
+  color: #D0D0D0;
+  background-color: #0B0C10;
+  padding: .75em;
+  text-align: center;
+}
+nav ul {
+  font-size: 18px;
+  font-weight: bold;
+  list-style: none;
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+  background-color: #0B0C10;
+}
+nav .nav-link:link, .nav-link:visited {
+  color: #D0D0D0;
+  text-decoration: none;
+}
+nav .nav-link:hover, .nav-link:active {
+  color: #F0F0F0;
+  text-decoration: underline;
+}
+h1 {
+  font-family: 'Audiowide', 'Ariel', sans-serif;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: .25em;
+}
+h2 {
+  font-family: 'Audiowide', 'Ariel', sans-serif;
+  font-size: 1.6em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+h3{
+  font-family: 'Audiowide', 'Ariel', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  color: #0D335D;
+  font-size: 1.4em;
+  padding-bottom: .5em;
+}
+p {
+  line-height: 190%;
+}
+img {
+  margin: 0 auto;
+}
+.pic:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  transition: 1s ease;
+}
+.grid-container {
+  margin: 1em 4em;
+  padding: 1em;
+  display: grid;
+  justify-content: center;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1.5fr 1.5fr;
+
+  grid-template-areas:
+                      "head head head"
+                      "pic1 par1 par1"
+                      "pic2 par2 par2"
+                      "pic3 par3 par3";
+}
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+                        "head"
+                        "pic1"
+                        "par1"
+                        "pic2"
+                        "par2"
+                        "pic3"
+                        "par3";
+  }
+}
+.header {
+  grid-area: head;
+}
+.one {
+  grid-area: par1;
+}
+.two {
+  grid-area: par2;
+}
+.three {
+  grid-area: par3;
+}
+.pic-one {
+  grid-area: pic1;
+  background-color: black;
+}
+.pic-two {
+  grid-area: pic2;
+  background-color: black;
+}
+.pic-three {
+  grid-area: pic3;
+  background-color: black;
+}
+.grid-item {
+  padding: .5em;
+}
