@@ -1,0 +1,260 @@
+body {
+  font-size: 18px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #FFF;
+  background-color: #0E0B16;
+  width: 100%;
+  margin: 0 auto;
+}
+main {
+  width: 95%;
+  margin: 0 auto;
+}
+i.fas { /*-- adds a little padding left and right on fontawesome icons --*/
+  padding: 0 .33em;
+}
+
+/* Navbar style */
+.navbar {
+  margin-top: -1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #E7DFDD;
+  padding: 1em 4em;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {  /* For non mobile Nav */
+  .navbar {display: flex; flex-direction: row; justify-content: space-between;}
+}
+a.nav-item {
+  text-align: center;
+  color: #444;
+  text-decoration: none;
+  transition: color 250ms ease-in-out;
+}
+a.nav-item:hover {
+  color: #000;
+  cursor: pointer;
+}
+.nav-item.trigram {
+  display: none; /*-- hidden by default --*/
+  text-decoration: none;
+  font-size: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .navbar a, .navbar span {display: none;}
+  .navbar a.trigram {display:inherit; position:absolute; right:6%; font-size:2em; margin-top: -.5em;}
+  .navbar {padding: 1.75em 4em;}
+}
+@media screen and (max-width: 767px) {
+  .navbar.responsive {align-items: center;}
+  .navbar.responsive a, .navbar.responsive span {display:inherit;}
+  .navbar.responsive a:not(:last-child) {padding-bottom: .5em;}
+}
+
+/* Slideshow style */
+.slideshow {
+  padding: 1em;
+  margin: auto;
+  width: 90%;
+}
+.slideshow-wrapper {
+  position: relative;
+  max-width: 100%;
+}
+.slideshow-wrapper img {
+  width: 100%;
+}
+.numberof {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
+.captiontext {
+  margin-top: 16px;
+}
+.prev {position:absolute; left:0%; top: 45%;}
+.next {position:absolute; right:0%; top: 45%;}
+.prev, .next {
+  cursor:pointer;
+  font-weight: bold;
+  font-size: 40px;
+}
+.slide-picker {
+  display: flex;
+  flex-direction: row;
+}
+.indicator {
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+  opacity: .5;
+}
+.active, .indicator:hover {
+  opacity: 1; /*-- makes fully visible when hovered  --*/
+}
+.indicator img {
+  width: 100% !important; /*-- small images fill available space --*/
+}
+@media only screen and (max-width: 767px) {
+  .slideshow {display: none;}
+}
+
+/* grid style */
+.main-grid {
+  margin-top: 3.5rem; /*-- adds space above grid wrap --*/
+  margin-bottom: 3.5rem;
+  display: grid; /*-- sets display mode --*/
+  grid-gap: 1.5rem; /*-- creates gutters --*/
+  grid-template-columns: 1fr; /*-- default mobile layout is 1-column--*/
+}
+@media screen and (min-width: 550px) { /*-- at screens between 550 and 767 --*/
+  .main-grid {grid-template-columns: repeat(2, 1fr);}  /*-- 2 columnns --*/
+}
+@media screen and (min-width: 768px) {/*-- at screens between 768 and 989 --*/
+  .main-grid {grid-template-columns: repeat(3, 1fr);} /*-- 3 columnns --*/
+}
+@media screen and (min-width: 990px) {/*-- at screens between 990 and 1271 --*/
+  .main-grid {grid-template-columns: repeat(4, 1fr);} /*-- 4 columnns --*/
+}
+@media screen and (min-width: 1280px) {/*-- at screens 1280 and above --*/
+  .main-grid {grid-template-columns: repeat(4, 1fr);} /*-- 4 columnns --*/
+}
+
+.main-grid-item {
+  border-radius: 4px;  /*-- rounds borders --*/
+  padding: .5em; /*-- adds space inside --*/
+  background-color: #E7DFDD;
+}
+.thumb {
+  padding-bottom: 56%;
+  background-size: cover;
+  background-position: center center;
+}
+.one .thumb {background-image: url('../img/penguins.jpg');}
+.two .thumb {background-image: url('../img/bird_flock.jpg');}
+.three .thumb {background-image: url('../img/monkies.jpg');}
+.four .thumb {background-image: url('../img/fox.jpg');}
+.five .thumb {background-image: url('../img/peacock.jpg');}
+.six .thumb {background-image: url('../img/frog.jpg');}
+.seven .thumb {background-image: url('../img/elephants.jpg');}
+.eight .thumb {background-image: url('../img/ducks.jpg');}
+.nine .thumb {background-image: url('../img/lions.jpg');}
+.ten .thumb {background-image: url('../img/zebras.jpg');}
+.eleven .thumb {background-image: url('../img/meerkats.jpg');}
+.twelve .thumb {background-image: url('../img/cats.jpg');}
+.card-text {
+  color: #555;
+}
+.card-title {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: -.25em;
+  margin-top: -.05em;
+}
+
+button.card-more.button {
+  background-color: #E7DFDD;
+}
+.button a {
+  text-decoration: none;
+  border: 2px solid;
+  padding: .2em;
+  color: #555;
+  position: relative;
+  display: inline-block;
+}
+.spanClass {
+  font-size: 18px;
+  position: relative;
+  z-index: 3;
+}
+.button a::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  width: calc(100% + 6px);
+  height: calc(100% - 10px);
+  background-color: #E7DFDD;
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+.button a:hover::before {
+  transform: scaleY(0);
+}
+.button a::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+  background-color: #E7DFDD;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+.button a:hover::after {
+  transform: scaleX(0);
+}
+
+/* modal style */
+.modal {
+   display: none; /*-- hidden by default --*/
+   position: fixed;
+   z-index: 1100; /*-- sets higher than anything else so modal is in the very front --*/
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgba(0, 0, 0, .6);
+}
+.modal-content {
+   background-color: #5458CC;
+   color: #E7DFDD;
+   margin: 1rem auto;
+   padding: 1em;
+   width: 90%;
+   border-radius: 8px;
+   animation: fadein .5s ease-in-out;
+}
+@keyframes fadein {
+  from{transform:scale(.1);} /*-- modal grows from very small to full size--*/
+}
+.close {
+   color: #000;
+   font-size: 2.5em;
+   font-weight: bold;
+   position: absolute;
+   top: 6px;
+   right: 5.5%;
+}
+.close:hover,
+.close:focus {
+   color: #E7DFDD;
+   text-decoration: none;
+   cursor: pointer;
+}
+.modal-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+}
+.eg-text {
+  align-self: center;
+}
+.eg-text h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+.modal-body img {
+  margin-bottom: 1.5em;
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 1280px) { /*-- better modal display on largest screens --*/
+  .modal-body {grid-template-columns: 7fr 5fr;}
+}
